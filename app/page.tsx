@@ -10,30 +10,35 @@ const works = [
   {
     name: 'AuraAI',
     slug: 'auraai',
+    url: 'https://auraai.mvpway.agency',
     description: 'An AI-powered personal assistant platform built for modern productivity workflows.',
     tags: ['AI', 'SaaS'],
   },
   {
     name: 'Carpool',
     slug: 'carpool',
+    url: 'https://carpool.mvpway.agency',
     description: 'Smart carpooling app connecting commuters for shared, cost-effective daily rides.',
     tags: ['Mobile', 'Marketplace'],
   },
   {
     name: 'Drveenoo',
     slug: 'drveenoo',
+    url: 'https://drveenoo.mvpway.agency',
     description: 'Digital health platform connecting patients with doctors for seamless virtual consultations.',
     tags: ['HealthTech', 'Web App'],
   },
   {
     name: 'JobSenseAI',
     slug: 'jobsenseai',
+    url: 'https://jobsenseai.mvpway.agency',
     description: 'AI-driven job matching platform that surfaces the right opportunities based on skills and intent.',
     tags: ['AI', 'HRTech'],
   },
   {
     name: 'Kira',
     slug: 'kira',
+    url: 'https://kira.mvpway.agency',
     description: 'Conversational AI assistant that helps teams automate support and internal knowledge retrieval.',
     tags: ['AI', 'B2B'],
   },
@@ -135,22 +140,25 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {works.map((work) => (
-              <Card key={work.slug} className="group hover:shadow-md transition-shadow">
-                <CardHeader className="pb-2">
-                  <div className="flex items-center justify-between">
-                    <CardTitle className="text-lg capitalize">{work.name}</CardTitle>
-                    <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <p className="text-sm text-muted-foreground">{work.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {work.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary" className="text-xs">{tag}</Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+              <a key={work.slug} href={work.url} target="_blank" rel="noopener noreferrer" className="block">
+                <Card className="group hover:shadow-md transition-shadow h-full">
+                  <CardHeader className="pb-2">
+                    <div className="flex items-center justify-between">
+                      <CardTitle className="text-lg">{work.name}</CardTitle>
+                      <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                    </div>
+                    <p className="text-xs text-muted-foreground">{work.url.replace('https://', '')}</p>
+                  </CardHeader>
+                  <CardContent className="space-y-3">
+                    <p className="text-sm text-muted-foreground">{work.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {work.tags.map((tag) => (
+                        <Badge key={tag} variant="secondary" className="text-xs">{tag}</Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </a>
             ))}
           </div>
         </div>
