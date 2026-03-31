@@ -27,8 +27,8 @@ export default function AboutPage() {
     <>
       <section className="py-20">
         <div className="container mx-auto px-4 text-center">
-          <Badge variant="secondary" className="mb-4">Our Story</Badge>
-          <h1 className="text-3xl sm:text-4xl font-bold mb-6">We Build MVPs That Ship</h1>
+          <Badge variant="secondary" className="mb-4 border border-amber-500/30 bg-amber-500/10 text-amber-400">Our Story</Badge>
+          <h1 className="font-display text-3xl sm:text-4xl font-bold mb-6">We Build MVPs That Ship</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             MVPWay was born from the frustration of watching great ideas die in development.
             We believe the fastest path from idea to insight is a well-built MVP — and we make that happen.
@@ -36,24 +36,24 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-muted/40">
+      <section className="py-20 border-t border-border bg-card/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">Meet the Founders</h2>
+          <h2 className="font-display text-2xl sm:text-3xl font-bold text-center mb-12">Meet the Founders</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {team.map((member) => (
-              <Card key={member.name} className="overflow-hidden">
+              <Card key={member.name} className="overflow-hidden border-border bg-card hover:border-amber-500/30 transition-colors duration-300">
                 <CardContent className="p-6">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                    <span className="text-2xl font-bold text-primary">
+                  <div className="w-16 h-16 rounded-full bg-amber-500/10 flex items-center justify-center mb-4">
+                    <span className="text-2xl font-bold text-amber-400">
                       {member.name.charAt(0)}
                     </span>
                   </div>
-                  <h3 className="text-xl font-bold">{member.name}</h3>
-                  <p className="text-primary font-medium mb-3">{member.role}</p>
+                  <h3 className="font-display text-xl font-bold">{member.name}</h3>
+                  <p className="text-amber-400 font-medium mb-3">{member.role}</p>
                   <p className="text-sm text-muted-foreground mb-4">{member.bio}</p>
                   <div className="flex flex-wrap gap-2">
                     {member.skills.map((skill) => (
-                      <Badge key={skill} variant="secondary">{skill}</Badge>
+                      <Badge key={skill} variant="secondary" className="border border-amber-500/20 bg-amber-500/5 text-amber-400/80">{skill}</Badge>
                     ))}
                   </div>
                 </CardContent>
@@ -63,9 +63,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-20 border-t border-border">
         <div className="container mx-auto px-4 text-center max-w-2xl">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Our Mission</h2>
+          <h2 className="font-display text-2xl sm:text-3xl font-bold mb-6">Our Mission</h2>
           <p className="text-muted-foreground text-lg">
             To eliminate the gap between great ideas and great products. Every startup deserves a
             technical partner that ships fast, builds right, and cares about the outcome.

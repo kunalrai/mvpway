@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Space_Grotesk } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { ChatWidget } from '@/components/sections/ChatWidget'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space' })
 
 export const metadata: Metadata = {
   title: {
@@ -48,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`dark ${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
         <script
           type="application/ld+json"
@@ -64,13 +65,8 @@ export default function RootLayout({
                 { '@type': 'Person', name: 'Kunal Rai', jobTitle: 'Founder' },
                 { '@type': 'Person', name: 'Maneesh Kumar', jobTitle: 'Co-Founder' },
               ],
-              sameAs: [
-                'https://github.com/kunalrai/mvpway',
-              ],
-              knowsAbout: [
-                'MVP Development', 'Next.js', 'React', 'TypeScript',
-                'AI Integration', 'Mobile App Development', 'SaaS', 'Startup Products',
-              ],
+              sameAs: ['https://github.com/kunalrai/mvpway'],
+              knowsAbout: ['MVP Development', 'Next.js', 'React', 'TypeScript', 'AI Integration', 'Mobile App Development', 'SaaS', 'Startup Products'],
             }),
           }}
         />
@@ -81,36 +77,12 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'FAQPage',
               mainEntity: [
-                {
-                  '@type': 'Question',
-                  name: 'How fast can MVPWay build an MVP?',
-                  acceptedAnswer: { '@type': 'Answer', text: 'Most MVPs are delivered in 2 to 6 weeks depending on the complexity of the product.' },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'What tech stack does MVPWay use?',
-                  acceptedAnswer: { '@type': 'Answer', text: 'We primarily use Next.js, React, TypeScript, Node.js, Prisma, PostgreSQL, and Vercel. For AI products we use OpenAI, Claude API, and LangChain.' },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Does MVPWay build mobile apps?',
-                  acceptedAnswer: { '@type': 'Answer', text: 'Yes. We build cross-platform mobile apps using React Native and Expo for both iOS and Android.' },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'How much does an MVP cost?',
-                  acceptedAnswer: { '@type': 'Answer', text: 'We offer fixed-price engagements with no lock-in contracts. Pricing depends on scope. Contact us at hello@mvpway.com for a free consultation.' },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Is the first consultation free?',
-                  acceptedAnswer: { '@type': 'Answer', text: 'Yes. The first call is always free with no obligation.' },
-                },
-                {
-                  '@type': 'Question',
-                  name: 'Who founded MVPWay?',
-                  acceptedAnswer: { '@type': 'Answer', text: 'MVPWay was founded by Kunal Rai (Founder) and Maneesh Kumar (Co-Founder).' },
-                },
+                { '@type': 'Question', name: 'How fast can MVPWay build an MVP?', acceptedAnswer: { '@type': 'Answer', text: 'Most MVPs are delivered in 2 to 6 weeks depending on the complexity of the product.' } },
+                { '@type': 'Question', name: 'What tech stack does MVPWay use?', acceptedAnswer: { '@type': 'Answer', text: 'We primarily use Next.js, React, TypeScript, Node.js, Prisma, PostgreSQL, and Vercel. For AI products we use OpenAI, Claude API, and LangChain.' } },
+                { '@type': 'Question', name: 'Does MVPWay build mobile apps?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We build cross-platform mobile apps using React Native and Expo for both iOS and Android.' } },
+                { '@type': 'Question', name: 'How much does an MVP cost?', acceptedAnswer: { '@type': 'Answer', text: 'We offer fixed-price engagements with no lock-in contracts. Pricing depends on scope. Contact us at hello@mvpway.com for a free consultation.' } },
+                { '@type': 'Question', name: 'Is the first consultation free?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. The first call is always free with no obligation.' } },
+                { '@type': 'Question', name: 'Who founded MVPWay?', acceptedAnswer: { '@type': 'Answer', text: 'MVPWay was founded by Kunal Rai (Founder) and Maneesh Kumar (Co-Founder).' } },
               ],
             }),
           }}

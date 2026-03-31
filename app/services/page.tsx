@@ -49,28 +49,30 @@ export default function ServicesPage() {
     <>
       <section className="py-20">
         <div className="container mx-auto px-4 text-center">
-          <Badge variant="secondary" className="mb-4">What We Build</Badge>
-          <h1 className="text-3xl sm:text-4xl font-bold mb-6">Services Built for Speed</h1>
+          <Badge variant="secondary" className="mb-4 border border-amber-500/30 bg-amber-500/10 text-amber-400">What We Build</Badge>
+          <h1 className="font-display text-3xl sm:text-4xl font-bold mb-6">Services Built for Speed</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             From idea validation to production launch — we cover the full stack of MVP development.
           </p>
         </div>
       </section>
 
-      <section className="py-20 bg-muted/40">
+      <section className="py-20 border-t border-border bg-card/30">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((service) => (
-              <Card key={service.title} className="border-0 shadow-sm hover:shadow-md transition-shadow">
+              <Card key={service.title} className="border-border bg-card hover:border-amber-500/30 hover:bg-amber-500/5 transition-all duration-300">
                 <CardHeader>
-                  <service.icon className="h-8 w-8 text-primary mb-2" />
-                  <CardTitle>{service.title}</CardTitle>
+                  <div className="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center mb-2">
+                    <service.icon className="h-5 w-5 text-amber-400" />
+                  </div>
+                  <CardTitle className="font-display">{service.title}</CardTitle>
                   <CardDescription>{service.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {service.tags.map((tag) => (
-                      <Badge key={tag} variant="outline">{tag}</Badge>
+                      <Badge key={tag} variant="outline" className="border-amber-500/20 text-amber-400/80 bg-amber-500/5">{tag}</Badge>
                     ))}
                   </div>
                 </CardContent>
@@ -80,13 +82,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-20 border-t border-border">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Ready to Start?</h2>
+          <h2 className="font-display text-2xl sm:text-3xl font-bold mb-6">Ready to Start?</h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
             Let&apos;s talk about your project. We respond within 24 hours.
           </p>
-          <Link href="/contact" className={cn(buttonVariants({ size: 'lg' }))}>
+          <Link href="/contact" className={cn(buttonVariants({ size: 'lg' }), 'bg-amber-500 hover:bg-amber-400 text-black font-semibold')}>
             Get a Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </div>
