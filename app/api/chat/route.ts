@@ -1,4 +1,4 @@
-import { openrouter, SYSTEM_PROMPT } from '@/lib/openrouter'
+import { getOpenRouterClient, SYSTEM_PROMPT } from '@/lib/openrouter'
 import { NextRequest } from 'next/server'
 
 export const runtime = 'nodejs'
@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
       })
     }
 
-    const stream = await openrouter.chat.completions.create({
+    const stream = await getOpenRouterClient().chat.completions.create({
       model: process.env.OPENROUTER_MODEL || 'anthropic/claude-3.5-haiku',
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },

@@ -1,13 +1,15 @@
 import OpenAI from 'openai'
 
-export const openrouter = new OpenAI({
-  baseURL: 'https://openrouter.ai/api/v1',
-  apiKey: process.env.OPENROUTER_API_KEY,
-  defaultHeaders: {
-    'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL || 'https://mvpway.com',
-    'X-Title': 'MVPWay',
-  },
-})
+export function getOpenRouterClient() {
+  return new OpenAI({
+    baseURL: 'https://openrouter.ai/api/v1',
+    apiKey: process.env.OPENROUTER_API_KEY || 'not-set',
+    defaultHeaders: {
+      'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL || 'https://mvpway.com',
+      'X-Title': 'MVPWay',
+    },
+  })
+}
 
 export const SYSTEM_PROMPT = `You are Maya, MVPWay's friendly AI assistant. MVPWay is a rapid MVP development agency.
 
