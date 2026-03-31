@@ -2,9 +2,48 @@ import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { LeadForm } from '@/components/sections/LeadForm'
-import { Zap, Rocket, Shield, Clock, Code2, Users, ArrowUpRight } from 'lucide-react'
+import { Zap, Rocket, Shield, Clock, Code2, Users, ArrowUpRight, Star } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { buttonVariants } from '@/lib/button-variants'
+
+const testimonials = [
+  {
+    name: 'Rahul Mehta',
+    role: 'Founder, AuraAI',
+    review: 'MVPWay turned our AI concept into a working product in under 4 weeks. The code quality was production-ready from day one — no rewrites needed.',
+    rating: 5,
+  },
+  {
+    name: 'Priya Sharma',
+    role: 'CEO, JobSenseAI',
+    review: 'We tried two other agencies before MVPWay. Nobody came close to their speed and communication. Our platform went live in 3 weeks and users love it.',
+    rating: 5,
+  },
+  {
+    name: 'Aditya Verma',
+    role: 'Co-Founder, Carpool',
+    review: 'Kunal and Maneesh understood our vision immediately. They built exactly what we needed — no scope creep, no surprises, just great work.',
+    rating: 5,
+  },
+  {
+    name: 'Dr. Sneha Iyer',
+    role: 'Founder, Drveenoo',
+    review: 'Building a healthcare platform requires attention to detail. MVPWay delivered a polished, secure product that our doctors and patients trust.',
+    rating: 5,
+  },
+  {
+    name: 'Vikram Singh',
+    role: 'Founder, Rishtey',
+    review: 'The team at MVPWay brought our matchmaking platform to life with a beautiful UI and solid backend. Highly recommend for any startup MVP.',
+    rating: 5,
+  },
+  {
+    name: 'Neha Kapoor',
+    role: 'Director, Spa',
+    review: 'Our booking system is now seamless. MVPWay built it fast, kept us in the loop throughout, and the post-launch support has been excellent.',
+    rating: 5,
+  },
+]
 
 const works = [
   {
@@ -173,6 +212,43 @@ export default function HomePage() {
                   </CardContent>
                 </Card>
               </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 bg-muted/40">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">What Our Clients Say</h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              Founders who trusted us to build their vision — in their own words.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {testimonials.map((t) => (
+              <Card key={t.name} className="border-0 shadow-sm flex flex-col">
+                <CardContent className="p-6 flex flex-col gap-4 flex-1">
+                  <div className="flex gap-0.5">
+                    {Array.from({ length: t.rating }).map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <p className="text-sm text-muted-foreground flex-1 leading-relaxed">
+                    &ldquo;{t.review}&rdquo;
+                  </p>
+                  <div className="flex items-center gap-3 pt-2 border-t">
+                    <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <span className="text-sm font-bold text-primary">{t.name.charAt(0)}</span>
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold">{t.name}</p>
+                      <p className="text-xs text-muted-foreground">{t.role}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
