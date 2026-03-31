@@ -28,7 +28,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="font-display font-medium">Email Us</h3>
-                <p className="text-sm text-muted-foreground">hello@mvpway.com</p>
+                <p className="text-sm text-muted-foreground">hello@mvpway.agency</p>
               </div>
             </div>
             <div className="flex items-start gap-3">

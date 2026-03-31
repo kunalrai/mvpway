@@ -59,7 +59,7 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'MVPWay',
               url: 'https://mvpway.com',
-              email: 'hello@mvpway.com',
+              email: 'hello@mvpway.agency',
               description: 'MVPWay is a rapid MVP development agency that helps startups build production-ready products in weeks, not months.',
               founders: [
                 { '@type': 'Person', name: 'Kunal Rai', jobTitle: 'Founder' },
@@ -80,7 +80,7 @@ export default function RootLayout({
                 { '@type': 'Question', name: 'How fast can MVPWay build an MVP?', acceptedAnswer: { '@type': 'Answer', text: 'Most MVPs are delivered in 2 to 6 weeks depending on the complexity of the product.' } },
                 { '@type': 'Question', name: 'What tech stack does MVPWay use?', acceptedAnswer: { '@type': 'Answer', text: 'We primarily use Next.js, React, TypeScript, Node.js, Prisma, PostgreSQL, and Vercel. For AI products we use OpenAI, Claude API, and LangChain.' } },
                 { '@type': 'Question', name: 'Does MVPWay build mobile apps?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We build cross-platform mobile apps using React Native and Expo for both iOS and Android.' } },
-                { '@type': 'Question', name: 'How much does an MVP cost?', acceptedAnswer: { '@type': 'Answer', text: 'We offer fixed-price engagements with no lock-in contracts. Pricing depends on scope. Contact us at hello@mvpway.com for a free consultation.' } },
+                { '@type': 'Question', name: 'How much does an MVP cost?', acceptedAnswer: { '@type': 'Answer', text: 'We offer fixed-price engagements with no lock-in contracts. Pricing depends on scope. Contact us at hello@mvpway.agency for a free consultation.' } },
                 { '@type': 'Question', name: 'Is the first consultation free?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. The first call is always free with no obligation.' } },
                 { '@type': 'Question', name: 'Who founded MVPWay?', acceptedAnswer: { '@type': 'Answer', text: 'MVPWay was founded by Kunal Rai (Founder) and Maneesh Kumar (Co-Founder).' } },
               ],

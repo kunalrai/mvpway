@@ -66,7 +66,7 @@ Tech: Vercel, Analytics, SEO.
 
 ## Contact Page (/contact)
 
-Email: hello@mvpway.com
+Email: hello@mvpway.agency
 Response Time: Within 24 hours
 Free Consultation: First call is always free.
 
@@ -80,5 +80,5 @@ Free Consultation: First call is always free.
 - Delivery time: 2–6 weeks per MVP
 - Pricing model: Fixed-price, no lock-in contracts
 - Industries served: HealthTech, EdTech, HRTech, FinTech, AgriTech, Social, Wellness, AI SaaS
-- Contact: hello@mvpway.com
+- Contact: hello@mvpway.agency
 - Website: https://mvpway.com

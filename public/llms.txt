@@ -33,7 +33,7 @@ Q: Does MVPWay do mobile apps?
 A: Yes. We build cross-platform mobile apps using React Native and Expo for both iOS and Android.
 
 Q: How much does an MVP cost?
-A: We offer fixed-price engagements. Pricing depends on scope. Book a free consultation at hello@mvpway.com.
+A: We offer fixed-price engagements. Pricing depends on scope. Book a free consultation at hello@mvpway.agency.
 
 Q: Who are the founders of MVPWay?
 A: Kunal Rai is the Founder and Maneesh Kumar is the Co-Founder.
@@ -48,7 +48,7 @@ Q: What industries does MVPWay serve?
 A: We have built products for HealthTech, EdTech, HRTech, FinTech, AgriTech, Social, Wellness, and AI-first SaaS companies.
 
 ## Contact
-- Email: hello@mvpway.com
+- Email: hello@mvpway.agency
 - Website: https://mvpway.com
 
 ## Values

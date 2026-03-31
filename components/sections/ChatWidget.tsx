@@ -90,7 +90,7 @@ export function ChatWidget() {
         const updated = [...prev]
         updated[updated.length - 1] = {
           role: 'assistant',
-          content: "Sorry, I'm having trouble connecting. Please email hello@mvpway.com directly.",
+          content: "Sorry, I'm having trouble connecting. Please email hello@mvpway.agency directly.",
         }
         return updated
       })

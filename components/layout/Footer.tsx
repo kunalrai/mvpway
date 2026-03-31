@@ -28,8 +28,8 @@ export function Footer() {
             <h3 className="font-display font-semibold mb-3">Contact</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="mailto:hello@mvpway.com" className="hover:text-amber-400 transition-colors">
-                  hello@mvpway.com
+                <a href="mailto:hello@mvpway.agency" className="hover:text-amber-400 transition-colors">
+                  hello@mvpway.agency
                 </a>
               </li>
               <li>Built with speed. Shipped with confidence.</li>
