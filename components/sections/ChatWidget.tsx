@@ -21,6 +21,7 @@ export function ChatWidget() {
   const [messages, setMessages] = useState<Message[]>([WELCOME_MESSAGE])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
+  const [sessionId, setSessionId] = useState<string | null>(null)
   const bottomRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -51,6 +52,7 @@ export function ChatWidget() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           messages: newMessages.map(({ role, content }) => ({ role, content })),
+          sessionId,
         }),
       })
 
@@ -58,17 +60,26 @@ export function ChatWidget() {
 
       const reader = res.body?.getReader()
       const decoder = new TextDecoder()
+      let buffer = ''
 
       if (reader) {
         while (true) {
           const { done, value } = await reader.read()
           if (done) break
-          const chunk = decoder.decode(value)
+          buffer += decoder.decode(value)
+
+          // Extract sessionId from first chunk
+          const sessionMatch = buffer.match(/__SESSION__(.+?)__SESSION__/)
+          if (sessionMatch) {
+            setSessionId(sessionMatch[1])
+            buffer = buffer.replace(/__SESSION__.+?__SESSION__/, '')
+          }
+
           setMessages((prev) => {
             const updated = [...prev]
             updated[updated.length - 1] = {
               role: 'assistant',
-              content: updated[updated.length - 1].content + chunk,
+              content: buffer,
             }
             return updated
           })

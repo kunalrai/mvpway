@@ -1,11 +1,12 @@
 import { getOpenRouterClient, SYSTEM_PROMPT } from '@/lib/openrouter'
+import { prisma } from '@/lib/db'
 import { NextRequest } from 'next/server'
 
 export const runtime = 'nodejs'
 
 export async function POST(request: NextRequest) {
   try {
-    const { messages } = await request.json()
+    const { messages, sessionId } = await request.json()
 
     if (!process.env.OPENROUTER_API_KEY) {
       return new Response(JSON.stringify({ error: 'Chat not configured' }), {
@@ -14,8 +15,29 @@ export async function POST(request: NextRequest) {
       })
     }
 
+    // Get or create session
+    let session = sessionId
+      ? await prisma.chatSession.findUnique({ where: { id: sessionId } })
+      : null
+
+    if (!session) {
+      session = await prisma.chatSession.create({ data: {} })
+    }
+
+    // Save the latest user message
+    const lastUserMessage = messages[messages.length - 1]
+    if (lastUserMessage?.role === 'user') {
+      await prisma.chatMessage.create({
+        data: {
+          sessionId: session.id,
+          role: 'user',
+          content: lastUserMessage.content,
+        },
+      })
+    }
+
     const stream = await getOpenRouterClient().chat.completions.create({
-      model: process.env.OPENROUTER_MODEL || 'anthropic/claude-3.5-haiku',
+      model: process.env.OPENROUTER_MODEL || 'openai/gpt-oss-120b:free',
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         ...messages,
@@ -25,15 +47,32 @@ export async function POST(request: NextRequest) {
     })
 
     const encoder = new TextEncoder()
+    let fullResponse = ''
+
     const readable = new ReadableStream({
       async start(controller) {
+        // Send sessionId as first chunk so client can store it
+        controller.enqueue(encoder.encode(`__SESSION__${session!.id}__SESSION__`))
+
         for await (const chunk of stream) {
           const text = chunk.choices[0]?.delta?.content || ''
           if (text) {
+            fullResponse += text
             controller.enqueue(encoder.encode(text))
           }
         }
         controller.close()
+
+        // Save assistant response after streaming completes
+        if (fullResponse) {
+          await prisma.chatMessage.create({
+            data: {
+              sessionId: session!.id,
+              role: 'assistant',
+              content: fullResponse,
+            },
+          }).catch(console.error)
+        }
       },
     })
 
