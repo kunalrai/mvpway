@@ -96,9 +96,9 @@ export function ChatWidget() {
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-3">
       {open && (
-        <Card className="w-80 sm:w-96 shadow-2xl border flex flex-col" style={{ height: '480px' }}>
+        <Card className="w-[calc(100vw-2rem)] sm:w-96 shadow-2xl border flex flex-col" style={{ height: 'min(480px, calc(100dvh - 120px))' }}>
           <CardHeader className="py-3 px-4 border-b flex-row items-center justify-between space-y-0">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">

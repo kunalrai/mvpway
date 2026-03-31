@@ -28,7 +28,7 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="container mx-auto px-4 text-center">
           <Badge variant="secondary" className="mb-4">Our Story</Badge>
-          <h1 className="text-4xl font-bold mb-6">We Build MVPs That Ship</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold mb-6">We Build MVPs That Ship</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             MVPWay was born from the frustration of watching great ideas die in development.
             We believe the fastest path from idea to insight is a well-built MVP — and we make that happen.
@@ -38,7 +38,7 @@ export default function AboutPage() {
 
       <section className="py-20 bg-muted/40">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Meet the Founders</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">Meet the Founders</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {team.map((member) => (
               <Card key={member.name} className="overflow-hidden">
@@ -65,7 +65,7 @@ export default function AboutPage() {
 
       <section className="py-20">
         <div className="container mx-auto px-4 text-center max-w-2xl">
-          <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Our Mission</h2>
           <p className="text-muted-foreground text-lg">
             To eliminate the gap between great ideas and great products. Every startup deserves a
             technical partner that ships fast, builds right, and cares about the outcome.

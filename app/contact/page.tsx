@@ -14,7 +14,7 @@ export default function ContactPage() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Badge variant="secondary" className="mb-4">Get In Touch</Badge>
-          <h1 className="text-4xl font-bold mb-4">Let&apos;s Build Something Together</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4">Let&apos;s Build Something Together</h1>
           <p className="text-muted-foreground max-w-xl mx-auto">
             Share your idea and we&apos;ll respond with a plan within 24 hours.
           </p>

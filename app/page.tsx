@@ -70,7 +70,7 @@ export default function HomePage() {
       <section className="py-20 bg-muted/40">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Why Choose MVPWay?</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">Why Choose MVPWay?</h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
               We combine technical expertise with startup speed to deliver products that matter.
             </p>
@@ -96,7 +96,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-4">Ready to Build Your MVP?</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Build Your MVP?</h2>
               <p className="text-muted-foreground mb-6">
                 Share your idea with us. We&apos;ll review it and get back to you with a plan within 24 hours.
               </p>

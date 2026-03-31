@@ -50,7 +50,7 @@ export default function ServicesPage() {
       <section className="py-20">
         <div className="container mx-auto px-4 text-center">
           <Badge variant="secondary" className="mb-4">What We Build</Badge>
-          <h1 className="text-4xl font-bold mb-6">Services Built for Speed</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold mb-6">Services Built for Speed</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             From idea validation to production launch — we cover the full stack of MVP development.
           </p>
@@ -82,7 +82,7 @@ export default function ServicesPage() {
 
       <section className="py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Start?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Ready to Start?</h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
             Let&apos;s talk about your project. We respond within 24 hours.
           </p>
