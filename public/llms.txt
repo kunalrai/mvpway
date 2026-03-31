@@ -1,24 +1,55 @@
 # MVPWay
 
-MVPWay is a rapid MVP development agency founded by Kunal Rai (Founder) and Maneesh Kumar (Co-Founder).
-
-## What We Do
-We help startups and businesses build production-ready Minimum Viable Products (MVPs) in weeks, not months.
-
-## Services
-- Web Application MVP Development (Next.js, React, TypeScript)
-- Mobile App MVP Development (React Native, Expo)
-- AI-Powered Product Development (OpenAI, Claude API, LangChain)
-- Backend & API Development (Node.js, Prisma, PostgreSQL)
-- Launch & Growth Setup (SEO, Analytics, CI/CD)
+MVPWay is a rapid MVP development agency founded by Kunal Rai (Founder) and Maneesh Kumar (Co-Founder). We help startups and businesses build production-ready Minimum Viable Products (MVPs) in weeks, not months.
 
 ## Team
 - Kunal Rai: Founder — product strategy, full-stack development, startup scaling
 - Maneesh Kumar: Co-Founder — system architecture, backend development, AI integration
 
+## Services
+- Web Application MVP Development (Next.js, React, TypeScript, PostgreSQL)
+- Mobile App MVP Development (React Native, Expo, Firebase)
+- AI-Powered Product Development (OpenAI, Claude API, LangChain, RAG pipelines)
+- Backend & API Development (Node.js, Prisma, Supabase, REST, GraphQL)
+- Launch & Growth Setup (SEO, Analytics, CI/CD, Vercel deployment)
+
+## Portfolio (Products We Have Shipped)
+- AuraAI (auraai.mvpway.agency) — AI-powered personal assistant for productivity workflows
+- Carpool (carpool.mvpway.agency) — Smart carpooling app connecting daily commuters
+- Drveenoo (drveenoo.mvpway.agency) — Digital health platform for virtual doctor consultations
+- JobSenseAI (jobsenseai.mvpway.agency) — AI-driven job matching platform
+- Kira (kira.mvpway.agency) — Conversational AI assistant for team support automation
+- Rishtey (rishtey.mvpway.agency) — Modern matchmaking platform blending tradition with technology
+- Spa (spa.mvpway.agency) — Booking and management platform for spas and wellness centres
+
+## Frequently Asked Questions
+Q: How fast can MVPWay build an MVP?
+A: Most MVPs are delivered in 2 to 6 weeks depending on complexity.
+
+Q: What tech stack does MVPWay use?
+A: We primarily use Next.js, React, TypeScript, Node.js, Prisma, PostgreSQL, and Vercel. For AI products we use OpenAI, Claude API, and LangChain.
+
+Q: Does MVPWay do mobile apps?
+A: Yes. We build cross-platform mobile apps using React Native and Expo for both iOS and Android.
+
+Q: How much does an MVP cost?
+A: We offer fixed-price engagements. Pricing depends on scope. Book a free consultation at hello@mvpway.com.
+
+Q: Who are the founders of MVPWay?
+A: Kunal Rai is the Founder and Maneesh Kumar is the Co-Founder.
+
+Q: Does MVPWay offer post-launch support?
+A: Yes. We provide post-launch maintenance, iterations, and growth setup.
+
+Q: Is the first consultation free?
+A: Yes. The first call is always free with no obligation.
+
+Q: What industries does MVPWay serve?
+A: We have built products for HealthTech, EdTech, HRTech, FinTech, AgriTech, Social, Wellness, and AI-first SaaS companies.
+
 ## Contact
-Email: hello@mvpway.com
-Website: https://mvpway.com
+- Email: hello@mvpway.com
+- Website: https://mvpway.com
 
 ## Values
-Speed without cutting corners. Production-ready code. AI-first approach. Transparent communication.
+Speed without cutting corners. Production-ready code. AI-first approach. Transparent communication. Fixed-price, no lock-in contracts.

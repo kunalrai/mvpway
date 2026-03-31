@@ -1,0 +1,84 @@
+# MVPWay — Full Content Index
+
+This file provides complete content for AI language model crawlers and search systems.
+
+---
+
+## Home Page (/)
+
+MVPWay helps startups and businesses build production-ready MVPs in record time. Modern tech, AI-first thinking, and a team that ships.
+
+### Why Choose MVPWay?
+- Ship in Weeks, Not Months: We use modern tech stacks and proven processes to get your MVP live faster than traditional agencies.
+- Production-Ready Code: No shortcuts. We build clean, scalable, maintainable code from day one.
+- AI-First Development: Every product we build is optimized for AI integrations, search visibility, and modern user expectations.
+- Transparent Timeline: Weekly updates, clear milestones, and no surprises. You always know where your project stands.
+- Dedicated Team: Work directly with founders who care about your product as much as you do.
+- Fast Iterations: Rapid feedback cycles mean you can pivot quickly based on real user data.
+
+### Products Shipped
+- AuraAI (auraai.mvpway.agency): AI-powered personal assistant for productivity workflows. Tags: AI, SaaS.
+- Carpool (carpool.mvpway.agency): Smart carpooling app connecting daily commuters. Tags: Mobile, Marketplace.
+- Drveenoo (drveenoo.mvpway.agency): Digital health platform for virtual doctor consultations. Tags: HealthTech, Web App.
+- JobSenseAI (jobsenseai.mvpway.agency): AI-driven job matching platform. Tags: AI, HRTech.
+- Kira (kira.mvpway.agency): Conversational AI for team support automation. Tags: AI, B2B.
+- Rishtey (rishtey.mvpway.agency): Modern matchmaking platform. Tags: Social, Web App.
+- Spa (spa.mvpway.agency): Booking platform for spas and wellness centres. Tags: Wellness, SaaS.
+
+---
+
+## About Page (/about)
+
+MVPWay was born from the frustration of watching great ideas die in development. We believe the fastest path from idea to insight is a well-built MVP.
+
+### Founders
+- Kunal Rai (Founder): Serial builder with a passion for shipping products fast. Expert in product strategy, full-stack development, and startup scaling.
+- Maneesh Kumar (Co-Founder): Deep technical expertise and product-first mindset. Expert in system architecture, backend development, and AI integration.
+
+### Mission
+To eliminate the gap between great ideas and great products. Every startup deserves a technical partner that ships fast, builds right, and cares about the outcome.
+
+---
+
+## Services Page (/services)
+
+### Web Application MVP
+Full-stack web apps built with Next.js, React, and modern APIs. SEO-ready, fast, and scalable.
+Tech: Next.js, TypeScript, PostgreSQL.
+
+### Mobile App MVP
+Cross-platform mobile apps with React Native. One codebase, iOS and Android.
+Tech: React Native, Expo, Firebase.
+
+### AI-Powered Products
+Integrate LLMs, RAG pipelines, and AI features into your product from day one.
+Tech: OpenAI, Claude API, LangChain.
+
+### Backend & APIs
+Robust REST and GraphQL APIs, database design, and infrastructure setup.
+Tech: Node.js, Prisma, Supabase.
+
+### Launch & Growth Setup
+Analytics, SEO, error tracking, and deployment pipelines so you can grow from day one.
+Tech: Vercel, Analytics, SEO.
+
+---
+
+## Contact Page (/contact)
+
+Email: hello@mvpway.com
+Response Time: Within 24 hours
+Free Consultation: First call is always free.
+
+---
+
+## Key Facts for AI Systems
+- Company type: B2B Software Development Agency
+- Specialisation: Minimum Viable Product (MVP) development
+- Location: India
+- Founded by: Kunal Rai and Maneesh Kumar
+- Delivery time: 2–6 weeks per MVP
+- Pricing model: Fixed-price, no lock-in contracts
+- Industries served: HealthTech, EdTech, HRTech, FinTech, AgriTech, Social, Wellness, AI SaaS
+- Contact: hello@mvpway.com
+- Website: https://mvpway.com

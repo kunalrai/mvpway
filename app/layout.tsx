@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: '%s | MVPWay',
   },
   description: 'MVPWay helps startups and businesses build production-ready MVPs in record time. From idea to launch, we ship fast.',
-  keywords: ['MVP development', 'startup', 'rapid development', 'web development', 'product launch'],
+  keywords: ['MVP development', 'startup', 'rapid development', 'web development', 'product launch', 'AI development', 'React', 'Next.js'],
   authors: [{ name: 'MVPWay' }],
   creator: 'MVPWay',
   openGraph: {
@@ -57,10 +57,60 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'MVPWay',
-              description: 'Rapid MVP development company',
+              url: 'https://mvpway.com',
+              email: 'hello@mvpway.com',
+              description: 'MVPWay is a rapid MVP development agency that helps startups build production-ready products in weeks, not months.',
               founders: [
                 { '@type': 'Person', name: 'Kunal Rai', jobTitle: 'Founder' },
                 { '@type': 'Person', name: 'Maneesh Kumar', jobTitle: 'Co-Founder' },
+              ],
+              sameAs: [
+                'https://github.com/kunalrai/mvpway',
+              ],
+              knowsAbout: [
+                'MVP Development', 'Next.js', 'React', 'TypeScript',
+                'AI Integration', 'Mobile App Development', 'SaaS', 'Startup Products',
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: [
+                {
+                  '@type': 'Question',
+                  name: 'How fast can MVPWay build an MVP?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'Most MVPs are delivered in 2 to 6 weeks depending on the complexity of the product.' },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'What tech stack does MVPWay use?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'We primarily use Next.js, React, TypeScript, Node.js, Prisma, PostgreSQL, and Vercel. For AI products we use OpenAI, Claude API, and LangChain.' },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Does MVPWay build mobile apps?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'Yes. We build cross-platform mobile apps using React Native and Expo for both iOS and Android.' },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'How much does an MVP cost?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'We offer fixed-price engagements with no lock-in contracts. Pricing depends on scope. Contact us at hello@mvpway.com for a free consultation.' },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Is the first consultation free?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'Yes. The first call is always free with no obligation.' },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Who founded MVPWay?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'MVPWay was founded by Kunal Rai (Founder) and Maneesh Kumar (Co-Founder).' },
+                },
               ],
             }),
           }}
