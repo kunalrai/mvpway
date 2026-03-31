@@ -42,6 +42,20 @@ const works = [
     description: 'Conversational AI assistant that helps teams automate support and internal knowledge retrieval.',
     tags: ['AI', 'B2B'],
   },
+  {
+    name: 'Rishtey',
+    slug: 'rishtey',
+    url: 'https://rishtey.mvpway.agency',
+    description: 'Modern matchmaking platform blending tradition with technology for meaningful connections.',
+    tags: ['Social', 'Web App'],
+  },
+  {
+    name: 'Spa',
+    slug: 'spa',
+    url: 'https://spa.mvpway.agency',
+    description: 'Booking and management platform for spas and wellness centres to streamline appointments.',
+    tags: ['Wellness', 'SaaS'],
+  },
 ]
 
 const features = [
