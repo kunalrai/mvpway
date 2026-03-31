@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
     }
 
     const stream = await getOpenRouterClient().chat.completions.create({
-      model: process.env.OPENROUTER_MODEL || 'openai/gpt-oss-120b:free',
+      model: process.env.OPENROUTER_MODEL || 'google/gemini-flash-1.5',
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         ...messages,
