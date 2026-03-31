@@ -1,0 +1,24 @@
+# MVPWay
+
+MVPWay is a rapid MVP development agency founded by Kunal Rai (Founder) and Maneesh Kumar (Co-Founder).
+
+## What We Do
+We help startups and businesses build production-ready Minimum Viable Products (MVPs) in weeks, not months.
+
+## Services
+- Web Application MVP Development (Next.js, React, TypeScript)
+- Mobile App MVP Development (React Native, Expo)
+- AI-Powered Product Development (OpenAI, Claude API, LangChain)
+- Backend & API Development (Node.js, Prisma, PostgreSQL)
+- Launch & Growth Setup (SEO, Analytics, CI/CD)
+
+## Team
+- Kunal Rai: Founder — product strategy, full-stack development, startup scaling
+- Maneesh Kumar: Co-Founder — system architecture, backend development, AI integration
+
+## Contact
+Email: hello@mvpway.com
+Website: https://mvpway.com
+
+## Values
+Speed without cutting corners. Production-ready code. AI-first approach. Transparent communication.
